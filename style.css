@@ -2,13 +2,13 @@
   --bg: #f7f1ec;
   --bg-soft: #fcf8f5;
   --white: #ffffff;
-  --text: #1d1715;
-  --muted: #6e625d;
-  --line: #eadcd3;
-  --accent: #d0a394;
-  --accent-dark: #ae7e6f;
-  --accent-soft: #f2e3dc;
-  --dark: #171312;
+  --text: #181615;
+  --muted: #6f6661;
+  --line: #eadfd7;
+  --accent: #d1a595;
+  --accent-dark: #b47f6e;
+  --accent-soft: #f4e8e2;
+  --dark: #151313;
   --shadow: 0 22px 50px rgba(38, 22, 18, 0.08);
   --shadow-soft: 0 14px 30px rgba(38, 22, 18, 0.05);
   --radius-xl: 34px;
@@ -31,7 +31,7 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(208, 163, 148, 0.18), transparent 22%),
+    radial-gradient(circle at top left, rgba(209, 165, 149, 0.18), transparent 22%),
     linear-gradient(180deg, #fbf7f4 0%, #f7f1ec 42%, #fdfaf8 100%);
 }
 
@@ -50,14 +50,22 @@ a {
   margin: 0 auto;
 }
 
-/* HEADER */
+h1,
+h2,
+h3,
+.logo-mark,
+.hero-overlay-card h3 {
+  font-family: "Sora", sans-serif;
+  letter-spacing: -0.03em;
+}
+
 .header {
   position: sticky;
   top: 0;
   z-index: 500;
-  background: rgba(252, 248, 245, 0.8);
+  background: rgba(252, 248, 245, 0.82);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(234, 220, 211, 0.85);
+  border-bottom: 1px solid rgba(234, 223, 215, 0.9);
 }
 
 .nav {
@@ -80,10 +88,9 @@ a {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #111 0%, #2e2220 100%);
+  background: linear-gradient(135deg, #111 0%, #2d2523 100%);
   color: #fff;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
   box-shadow: var(--shadow-soft);
 }
@@ -116,7 +123,6 @@ a {
 .menu a {
   color: var(--muted);
   font-weight: 500;
-  position: relative;
   transition: 0.25s ease;
 }
 
@@ -124,7 +130,6 @@ a {
   color: var(--text);
 }
 
-/* BUTTONS */
 .btn {
   min-height: 54px;
   padding: 0 24px;
@@ -146,11 +151,11 @@ a {
 .btn-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: #fff;
-  box-shadow: 0 16px 32px rgba(174, 126, 111, 0.22);
+  box-shadow: 0 16px 32px rgba(180, 127, 110, 0.22);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.86);
   color: var(--text);
   border-color: var(--line);
 }
@@ -159,7 +164,6 @@ a {
   width: 100%;
 }
 
-/* HERO */
 .hero {
   padding: 54px 0 26px;
 }
@@ -172,8 +176,8 @@ a {
 }
 
 .hero-copy {
-  background: rgba(255, 253, 251, 0.75);
-  border: 1px solid rgba(234, 220, 211, 0.82);
+  background: rgba(255, 253, 251, 0.78);
+  border: 1px solid rgba(234, 223, 215, 0.84);
   border-radius: var(--radius-xl);
   padding: 52px 46px;
   box-shadow: var(--shadow);
@@ -186,7 +190,7 @@ a {
   padding: 0 14px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.88);
   color: var(--muted);
   font-size: 12px;
   font-weight: 700;
@@ -206,15 +210,14 @@ a {
 .booking-copy h2,
 .location-box h2,
 .cta-box h2 {
-  font-family: "Cormorant Garamond", serif;
-  line-height: 0.96;
-  letter-spacing: -0.02em;
+  line-height: 1.02;
 }
 
 .hero-copy h1 {
-  font-size: clamp(50px, 7vw, 84px);
+  font-size: clamp(44px, 6.4vw, 72px);
   margin: 18px 0 18px;
   max-width: 660px;
+  font-weight: 700;
 }
 
 .hero-copy h1 span {
@@ -222,8 +225,8 @@ a {
 }
 
 .hero-text {
-  font-size: 18px;
-  line-height: 1.8;
+  font-size: 17px;
+  line-height: 1.85;
   color: var(--muted);
   max-width: 620px;
   margin: 0 0 30px;
@@ -243,7 +246,7 @@ a {
 }
 
 .badge-box {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   padding: 18px 16px;
@@ -267,7 +270,7 @@ a {
   min-height: 680px;
   border-radius: var(--radius-xl);
   overflow: hidden;
-  border: 1px solid rgba(234, 220, 211, 0.82);
+  border: 1px solid rgba(234, 223, 215, 0.84);
   box-shadow: var(--shadow);
   background: #e8ddd6;
 }
@@ -283,7 +286,7 @@ a {
   left: 22px;
   right: 22px;
   bottom: 22px;
-  background: rgba(255, 251, 248, 0.78);
+  background: rgba(255, 251, 248, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(14px);
   border-radius: 24px;
@@ -302,8 +305,8 @@ a {
 
 .hero-overlay-card h3 {
   margin: 0 0 6px;
-  font-size: 30px;
-  font-family: "Cormorant Garamond", serif;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .hero-overlay-card p {
@@ -312,7 +315,6 @@ a {
   line-height: 1.6;
 }
 
-/* TRUST */
 .trust-strip {
   padding: 10px 0 18px;
 }
@@ -329,20 +331,19 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--line);
   color: var(--text);
   font-weight: 600;
   box-shadow: var(--shadow-soft);
 }
 
-/* SECTIONS */
 .section {
   padding: 86px 0;
 }
 
 .section-soft {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.12));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.12));
 }
 
 .section-head {
@@ -352,8 +353,9 @@ a {
 }
 
 .section-head h2 {
-  font-size: clamp(38px, 4vw, 58px);
+  font-size: clamp(34px, 4vw, 52px);
   margin: 16px 0 12px;
+  font-weight: 700;
 }
 
 .section-head p {
@@ -363,7 +365,6 @@ a {
   font-size: 16px;
 }
 
-/* SERVICES */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -371,7 +372,7 @@ a {
 }
 
 .service-card {
-  background: rgba(255, 253, 251, 0.88);
+  background: rgba(255, 253, 251, 0.9);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -410,8 +411,8 @@ a {
 
 .service-content h3 {
   margin: 0 0 10px;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .service-content p {
@@ -428,7 +429,6 @@ a {
   font-weight: 700;
 }
 
-/* GALLERY */
 .gallery-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -468,7 +468,7 @@ a {
   align-items: center;
   padding: 0 14px;
   border-radius: 999px;
-  background: rgba(255, 252, 249, 0.82);
+  background: rgba(255, 252, 249, 0.84);
   color: var(--text);
   font-weight: 700;
   font-size: 14px;
@@ -479,7 +479,6 @@ a {
   grid-row: span 2;
 }
 
-/* ABOUT */
 .about-grid,
 .booking-grid,
 .location-grid {
@@ -509,7 +508,7 @@ a {
 .booking-box,
 .location-box,
 .location-image {
-  background: rgba(255, 253, 251, 0.88);
+  background: rgba(255, 253, 251, 0.9);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
@@ -519,8 +518,9 @@ a {
 .about-content h2,
 .booking-copy h2,
 .location-box h2 {
-  font-size: clamp(36px, 4vw, 56px);
+  font-size: clamp(32px, 4vw, 48px);
   margin: 16px 0;
+  font-weight: 700;
 }
 
 .about-content p,
@@ -544,7 +544,7 @@ a {
   align-items: center;
   padding: 0 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--line);
   font-weight: 600;
   font-size: 14px;
@@ -559,7 +559,6 @@ a {
   line-height: 1.75;
 }
 
-/* BOOKING */
 .booking-benefits {
   display: grid;
   gap: 12px;
@@ -569,7 +568,7 @@ a {
 .benefit-card {
   padding: 16px 18px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.95);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-soft);
 }
@@ -615,7 +614,7 @@ textarea {
   padding: 14px 16px;
   border-radius: 16px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.97);
   font: inherit;
   color: var(--text);
   outline: none;
@@ -631,10 +630,9 @@ input:focus,
 select:focus,
 textarea:focus {
   border-color: var(--accent-dark);
-  box-shadow: 0 0 0 4px rgba(208, 163, 148, 0.14);
+  box-shadow: 0 0 0 4px rgba(209, 165, 149, 0.14);
 }
 
-/* LOCATION */
 .location-image {
   overflow: hidden;
   padding: 0;
@@ -647,7 +645,6 @@ textarea:focus {
   object-fit: cover;
 }
 
-/* CTA */
 .cta-section {
   padding: 20px 0 80px;
 }
@@ -665,8 +662,9 @@ textarea:focus {
 }
 
 .cta-box h2 {
-  font-size: clamp(36px, 4vw, 58px);
+  font-size: clamp(34px, 4vw, 50px);
   margin: 16px 0 10px;
+  font-weight: 700;
 }
 
 .cta-box p {
@@ -676,7 +674,6 @@ textarea:focus {
   line-height: 1.8;
 }
 
-/* FOOTER */
 .footer {
   padding: 24px 0 42px;
   border-top: 1px solid var(--line);
@@ -688,7 +685,6 @@ textarea:focus {
   font-size: 14px;
 }
 
-/* WHATSAPP FLOAT */
 .whatsapp-float {
   position: fixed;
   right: 18px;
@@ -706,7 +702,6 @@ textarea:focus {
   box-shadow: 0 18px 38px rgba(17, 17, 17, 0.2);
 }
 
-/* RESPONSIVE */
 @media (max-width: 1100px) {
   .hero-grid,
   .about-grid,
