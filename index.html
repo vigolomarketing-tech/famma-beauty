@@ -6,13 +6,13 @@
   <title>FAMMA Beauty House</title>
   <meta
     name="description"
-    content="Peluquería, uñas, cejas y pestañas en Llavallol. Reservá tu turno de forma rápida por WhatsApp."
+    content="Peluquería, uñas, cejas y pestañas en Llavallol. Una experiencia de belleza delicada, moderna y profesional."
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
 
@@ -21,40 +21,35 @@
 <body>
 
   <a
-    class="whatsapp-float"
+    class="floating-whatsapp"
     href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20reservar%20un%20turno%20en%20FAMMA%20Beauty%20House."
     target="_blank"
     rel="noopener"
-    aria-label="Reservar turno por WhatsApp"
   >
-    WhatsApp
+    Reservar por WhatsApp
   </a>
 
-  <header class="header">
-    <div class="container nav">
-      <a href="#inicio" class="logo">
-        <div class="logo-mark">F</div>
-        <div class="logo-text">
-          <strong>FAMMA</strong>
-          <span>Beauty House</span>
-        </div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="#inicio" class="brand">
+        <span class="brand__name">FAMMA</span>
+        <span class="brand__sub">Beauty House</span>
       </a>
 
-      <nav class="menu">
+      <nav class="main-nav">
         <a href="#servicios">Servicios</a>
         <a href="#resultados">Resultados</a>
-        <a href="#nosotras">Nosotras</a>
-        <a href="#turnos">Turnos</a>
-        <a href="#ubicacion">Ubicación</a>
+        <a href="#marca">Marca</a>
+        <a href="#contacto">Contacto</a>
       </nav>
 
       <a
-        class="btn btn-primary"
+        class="header-cta"
         href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20reservar%20un%20turno%20en%20FAMMA%20Beauty%20House."
         target="_blank"
         rel="noopener"
       >
-        Reservar turno
+        Reservar
       </a>
     </div>
   </header>
@@ -62,264 +57,225 @@
   <main>
 
     <section class="hero" id="inicio">
-      <div class="container hero-grid">
+      <div class="hero__image">
+        <img
+          src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1600&q=80"
+          alt="Mujer en salón de belleza"
+        />
+      </div>
 
-        <div class="hero-copy">
-          <span class="eyebrow">Beauty experience premium · Llavallol</span>
-
-          <h1>
-            Tu espacio de
-            <span>belleza</span>
-            con una imagen moderna y profesional
-          </h1>
-
-          <p class="hero-text">
-            Peluquería, uñas, cejas y pestañas en una experiencia pensada para
-            que cada clienta se sienta increíble. Una web diseñada para mostrar
-            resultados reales y convertir visitas en turnos.
+      <div class="hero__overlay">
+        <div class="container hero__content">
+          <span class="hero__eyebrow">Peluquería · Uñas · Cejas y pestañas</span>
+          <h1>Una experiencia delicada, moderna y pensada para hacerte sentir increíble.</h1>
+          <p>
+            Belleza, cuidado y una atención personalizada en un espacio femenino,
+            elegante y profesional.
           </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#turnos">Sacar turno</a>
-            <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
-          </div>
+          <div class="hero__actions">
+            <a
+              class="btn btn--primary"
+              href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20reservar%20un%20turno%20en%20FAMMA%20Beauty%20House."
+              target="_blank"
+              rel="noopener"
+            >
+              Reservar turno
+            </a>
 
-          <div class="hero-badges">
-            <div class="badge-box">
-              <strong>Atención personalizada</strong>
-              <span>Cada detalle pensado para vos</span>
-            </div>
-            <div class="badge-box">
-              <strong>Turnos por WhatsApp</strong>
-              <span>Rápido, directo y prolijo</span>
-            </div>
-            <div class="badge-box">
-              <strong>Estética premium</strong>
-              <span>Una marca que transmite valor</span>
-            </div>
+            <a class="btn btn--ghost" href="#servicios">
+              Ver servicios
+            </a>
           </div>
         </div>
-
-        <div class="hero-visual">
-          <div class="hero-image-wrap">
-            <img src="images/hero.jpg" alt="Imagen principal de FAMMA Beauty House" />
-            <div class="hero-overlay-card">
-              <small>FAMMA Beauty House</small>
-              <h3>Delicadeza, estilo y resultados reales</h3>
-              <p>Peluquería · Uñas · Cejas y pestañas</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <section class="trust-strip">
-      <div class="container trust-grid">
-        <div class="trust-item">Atención cálida</div>
-        <div class="trust-item">Imagen premium</div>
-        <div class="trust-item">Resultados reales</div>
-        <div class="trust-item">Reserva rápida</div>
-      </div>
-    </section>
-
-    <section class="section" id="servicios">
+    <section class="statement">
       <div class="container">
+        <p>
+          En FAMMA Beauty House creemos que cada detalle importa:
+          la atención, la experiencia, el estilo y cómo te sentís cuando te mirás al espejo.
+        </p>
+      </div>
+    </section>
 
-        <div class="section-head">
-          <span class="eyebrow">Servicios destacados</span>
-          <h2>Todo en un solo lugar</h2>
+    <section class="editorial-block editorial-block--reverse" id="servicios">
+      <div class="container editorial-grid">
+        <div class="editorial-copy">
+          <span class="section-kicker">Peluquería</span>
+          <h2>Cabello cuidado, moderno y con una terminación impecable</h2>
           <p>
-            Una estructura clara, moderna y pensada para que la clienta vea
-            rápido lo que ofrecés, conecte con la marca y reserve sin vueltas.
+            Color, balayage, alisados, corte, brushing y nutrición para realzar tu estilo
+            con una imagen elegante y natural.
           </p>
+          <a
+            class="text-link"
+            href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20consultar%20por%20peluquer%C3%ADa."
+            target="_blank"
+            rel="noopener"
+          >
+            Consultar peluquería
+          </a>
         </div>
 
-        <div class="services-grid">
-
-          <article class="service-card">
-            <div class="service-image">
-              <img src="images/servicio-peluqueria.jpg" alt="Servicio de peluquería" />
-            </div>
-            <div class="service-content">
-              <span class="service-number">01</span>
-              <h3>Peluquería</h3>
-              <p>
-                Balayage, color, corte, brushing, alisados y nutrición con una
-                terminación impecable y una estética premium.
-              </p>
-              <a
-                class="service-link"
-                href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20consultar%20por%20peluquer%C3%ADa."
-                target="_blank"
-                rel="noopener"
-              >
-                Consultar servicio
-              </a>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <div class="service-image">
-              <img src="images/servicio-unas.jpg" alt="Servicio de uñas" />
-            </div>
-            <div class="service-content">
-              <span class="service-number">02</span>
-              <h3>Uñas</h3>
-              <p>
-                Diseños delicados, prolijos y modernos para acompañar tu estilo
-                con una presentación femenina y cuidada.
-              </p>
-              <a
-                class="service-link"
-                href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20consultar%20por%20u%C3%B1as."
-                target="_blank"
-                rel="noopener"
-              >
-                Consultar servicio
-              </a>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <div class="service-image">
-              <img src="images/servicio-cejas.jpg" alt="Servicio de cejas y pestañas" />
-            </div>
-            <div class="service-content">
-              <span class="service-number">03</span>
-              <h3>Cejas y pestañas</h3>
-              <p>
-                Una propuesta sutil, profesional y femenina para resaltar la
-                mirada con resultados armónicos y elegantes.
-              </p>
-              <a
-                class="service-link"
-                href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20consultar%20por%20cejas%20y%20pesta%C3%B1as."
-                target="_blank"
-                rel="noopener"
-              >
-                Consultar servicio
-              </a>
-            </div>
-          </article>
-
+        <div class="editorial-image">
+          <img
+            src="https://images.unsplash.com/photo-1560869713-da86a9ec94c2?auto=format&fit=crop&w=1200&q=80"
+            alt="Trabajo de peluquería"
+          />
         </div>
       </div>
     </section>
 
-    <section class="section section-soft" id="resultados">
-      <div class="container">
-
-        <div class="section-head">
-          <span class="eyebrow">Resultados reales</span>
-          <h2>Una galería que vende sola</h2>
+    <section class="editorial-block">
+      <div class="container editorial-grid">
+        <div class="editorial-copy">
+          <span class="section-kicker">Uñas</span>
+          <h2>Diseños delicados y una estética femenina que acompaña tu estilo</h2>
           <p>
-            Acá después subís las mejores fotos del Instagram: cambios de look,
-            uñas, pestañas y antes/después. Esta parte genera deseo y confianza al toque.
+            Soft gel, semipermanente, kapping, nail art y belleza de manos
+            con un acabado prolijo, moderno y armonioso.
+          </p>
+          <a
+            class="text-link"
+            href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20consultar%20por%20u%C3%B1as."
+            target="_blank"
+            rel="noopener"
+          >
+            Consultar uñas
+          </a>
+        </div>
+
+        <div class="editorial-image">
+          <img
+            src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=1200&q=80"
+            alt="Servicio de uñas"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-block editorial-block--reverse">
+      <div class="container editorial-grid">
+        <div class="editorial-copy">
+          <span class="section-kicker">Cejas y pestañas</span>
+          <h2>Una mirada sutil, cuidada y pensada para realzar tu belleza natural</h2>
+          <p>
+            Un servicio delicado y profesional para acompañar tu imagen con armonía,
+            prolijidad y estilo.
+          </p>
+          <a
+            class="text-link"
+            href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20consultar%20por%20cejas%20y%20pesta%C3%B1as."
+            target="_blank"
+            rel="noopener"
+          >
+            Consultar mirada
+          </a>
+        </div>
+
+        <div class="editorial-image">
+          <img
+            src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80"
+            alt="Servicio de cejas y pestañas"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="resultados">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Resultados</span>
+          <h2>Una imagen que habla por sí sola</h2>
+          <p>
+            Espacio ideal para mostrar los mejores trabajos, cambios de look,
+            detalles del salón y resultados reales.
           </p>
         </div>
 
         <div class="gallery-grid">
-          <div class="gallery-card gallery-large">
-            <img src="images/galeria-1.jpg" alt="Resultado destacado" />
-            <div class="gallery-label">Resultado destacado</div>
-          </div>
+          <article class="gallery-card gallery-card--large">
+            <img
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=80"
+              alt="Resultado destacado"
+            />
+          </article>
 
-          <div class="gallery-card">
-            <img src="images/galeria-2.jpg" alt="Balayage" />
-            <div class="gallery-label">Balayage</div>
-          </div>
+          <article class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&w=900&q=80"
+              alt="Cabello"
+            />
+          </article>
 
-          <div class="gallery-card">
-            <img src="images/galeria-3.jpg" alt="Uñas" />
-            <div class="gallery-label">Uñas</div>
-          </div>
+          <article class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80"
+              alt="Belleza"
+            />
+          </article>
 
-          <div class="gallery-card">
-            <img src="images/galeria-4.jpg" alt="Pestañas" />
-            <div class="gallery-label">Pestañas</div>
-          </div>
+          <article class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+              alt="Cliente"
+            />
+          </article>
 
-          <div class="gallery-card">
-            <img src="images/galeria-5.jpg" alt="Antes y después" />
-            <div class="gallery-label">Antes y después</div>
-          </div>
+          <article class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=80"
+              alt="Espacio beauty"
+            />
+          </article>
         </div>
-
       </div>
     </section>
 
-    <section class="section" id="nosotras">
-      <div class="container about-grid">
-
-        <div class="about-image">
-          <img src="images/nosotras.jpg" alt="Equipo de FAMMA Beauty House" />
+    <section class="brand-section" id="marca">
+      <div class="container brand-grid">
+        <div class="brand-image">
+          <img
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80"
+            alt="Interior de salón de belleza"
+          />
         </div>
 
-        <div class="about-content">
-          <span class="eyebrow">Sobre FAMMA</span>
-          <h2>Una experiencia cálida, femenina y profesional</h2>
-
+        <div class="brand-copy">
+          <span class="section-kicker">Sobre FAMMA</span>
+          <h2>Un espacio creado para que cada clienta se sienta cómoda, cuidada y segura</h2>
           <p>
-            En FAMMA Beauty House cada detalle está pensado para que la clienta
-            se sienta cómoda, segura y bien atendida. Combinamos estética,
-            cercanía y resultados reales en un espacio moderno y delicado.
+            FAMMA Beauty House busca transmitir delicadeza, profesionalismo y una experiencia
+            pensada desde la atención hasta el resultado final.
           </p>
-
-          <div class="about-pills">
-            <span>Atención personalizada</span>
-            <span>Resultados reales</span>
-            <span>Turnos por WhatsApp</span>
-            <span>Imagen premium</span>
-          </div>
-
-          <div class="about-note">
-            Ideal para mostrar una foto de Fer o del equipo, reforzando marca,
-            confianza y cercanía.
-          </div>
+          <p>
+            Esta sección está pensada para hablar de Fer, del equipo, del local y de la esencia
+            de la marca con un tono más emocional y premium.
+          </p>
         </div>
-
       </div>
     </section>
 
-    <section class="section" id="turnos">
+    <section class="booking-section" id="contacto">
       <div class="container booking-grid">
-
         <div class="booking-copy">
-          <span class="eyebrow">Reserva tu turno</span>
-          <h2>Mini formulario premium conectado a WhatsApp</h2>
+          <span class="section-kicker">Reservas</span>
+          <h2>Tu turno, de forma rápida y simple</h2>
           <p>
-            La clienta completa sus datos, elige el servicio y al tocar el botón
-            se abre WhatsApp con el mensaje ya armado para Fer. Se ve pro y además convierte mejor.
+            Completá tus datos y abrí WhatsApp con el mensaje listo para reservar.
           </p>
-
-          <div class="booking-benefits">
-            <div class="benefit-card">
-              <strong>Más profesional</strong>
-              <span>La experiencia se siente premium desde el primer contacto.</span>
-            </div>
-
-            <div class="benefit-card">
-              <strong>Más simple</strong>
-              <span>Todo ordenado y directo a WhatsApp, sin vueltas.</span>
-            </div>
-
-            <div class="benefit-card">
-              <strong>Más conversión</strong>
-              <span>Menos fricción, más consultas y más turnos cerrados.</span>
-            </div>
-          </div>
         </div>
 
         <div class="booking-box">
-          <form id="bookingForm" class="booking-form">
-
-            <div class="form-group">
+          <form id="bookingForm">
+            <div class="field">
               <label for="name">Nombre y apellido</label>
               <input type="text" id="name" placeholder="Ej: Martina Gómez" required />
             </div>
 
-            <div class="form-group">
+            <div class="field">
               <label for="service">Servicio</label>
               <select id="service" required>
                 <option value="">Seleccionar servicio</option>
@@ -330,13 +286,13 @@
               </select>
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
+            <div class="field-row">
+              <div class="field">
                 <label for="date">Día deseado</label>
                 <input type="date" id="date" required />
               </div>
 
-              <div class="form-group">
+              <div class="field">
                 <label for="time">Horario</label>
                 <select id="time" required>
                   <option value="">Elegir</option>
@@ -348,80 +304,36 @@
               </div>
             </div>
 
-            <div class="form-group">
+            <div class="field">
               <label for="details">Detalle extra</label>
-              <textarea
-                id="details"
-                rows="4"
-                placeholder="Contanos qué querés hacerte o si tenés alguna referencia o consulta extra"
-              ></textarea>
+              <textarea id="details" rows="4" placeholder="Contanos qué querés hacerte o si tenés alguna consulta"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-full">
+            <button type="submit" class="btn btn--primary btn--full">
               Enviar por WhatsApp
             </button>
-
           </form>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section section-soft" id="ubicacion">
-      <div class="container location-grid">
-
-        <div class="location-box">
-          <span class="eyebrow">Ubicación</span>
-          <h2>FAMMA Beauty House en Llavallol</h2>
-          <p><strong>Dirección:</strong> Capitán de Fragata Moyano 257, Llavallol</p>
-          <p><strong>Medios de pago:</strong> Tarjetas de crédito y transferencia</p>
-
-          <a
-            class="btn btn-secondary"
-            href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20reservar%20un%20turno."
-            target="_blank"
-            rel="noopener"
-          >
-            Hablar por WhatsApp
-          </a>
-        </div>
-
-        <div class="location-image">
-          <img src="images/local-o-mapa.jpg" alt="Ubicación o foto del local" />
-        </div>
-
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-box">
-          <div>
-            <span class="eyebrow eyebrow-dark">Demo premium</span>
-            <h2>Una web pensada para mostrar, enamorar y convertir</h2>
-            <p>
-              Con imágenes reales del Instagram y los últimos detalles de marca,
-              esta demo queda lista para presentar y cerrar.
-            </p>
-          </div>
-
-          <a
-            class="btn btn-primary"
-            href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20reservar%20un%20turno."
-            target="_blank"
-            rel="noopener"
-          >
-            Reservar ahora
-          </a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>FAMMA Beauty House · Demo premium orientada a turnos por WhatsApp</p>
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <strong>FAMMA Beauty House</strong>
+        <p>Cap. F. Moyano 257 · Llavallol</p>
+      </div>
+
+      <a
+        class="footer-link"
+        href="https://wa.me/5491138768137?text=Hola%20Fer%2C%20quiero%20reservar%20un%20turno."
+        target="_blank"
+        rel="noopener"
+      >
+        Reservar turno
+      </a>
     </div>
   </footer>
 
@@ -450,5 +362,6 @@ Detalle extra: ${details || "Sin detalle extra"}`;
       window.open(url, "_blank");
     });
   </script>
+
 </body>
 </html>
